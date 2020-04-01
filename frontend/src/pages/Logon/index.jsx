@@ -7,7 +7,7 @@ import "./styles.css";
 import logoImg from "../../assets/logo.svg";
 import heroesImg from "../../assets/heroes.png";
 
-export default function Logon() {
+const Logon = () => {
   const [id, setId] = useState("");
   const history = useHistory("");
 
@@ -53,4 +53,6 @@ export default function Logon() {
       <img src={heroesImg} alt="Heroes" />
     </div>
   );
-}
+};
+
+export default Logon;

@@ -6,7 +6,7 @@ import api from "../../services/api";
 import "./styles.css";
 import logoImg from "../../assets/logo.svg";
 
-export default function Profile() {
+const Profile = () => {
   const [incidents, setIncidents] = useState([]);
   const history = useHistory();
   const ongId = localStorage.getItem("ongId");
@@ -87,4 +87,6 @@ export default function Profile() {
       </ul>
     </div>
   );
-}
+};
+
+export default Profile;

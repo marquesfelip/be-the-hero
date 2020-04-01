@@ -6,7 +6,7 @@ import api from "../../services/api";
 import "./styles.css";
 import logoImg from "../../assets/logo.svg";
 
-export default function NewIncident() {
+const NewIncident = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
@@ -77,4 +77,6 @@ export default function NewIncident() {
       </div>
     </div>
   );
-}
+};
+
+export default NewIncident;

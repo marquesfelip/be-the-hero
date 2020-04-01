@@ -7,7 +7,7 @@ import * as MailComposer from "expo-mail-composer";
 import logoImg from "../../assets/logo.png";
 import styles from "./styles";
 
-export default function Detail() {
+const Detail = () => {
   const navigation = useNavigation();
   const route = useRoute();
 
@@ -84,4 +84,6 @@ export default function Detail() {
       </View>
     </View>
   );
-}
+};
+
+export default Detail;
