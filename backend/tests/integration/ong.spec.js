@@ -8,7 +8,7 @@ describe('ONG', () => {
     await connection.migrate.latest();
   });
 
-  afterAll(async() => {
+  afterAll(async () => {
     await connection.destroy();
   });
 
@@ -23,7 +23,7 @@ describe('ONG', () => {
         uf: 'SC'
       });
 
-      expect(response.body).toHaveProperty('id');
-      expect(response.body.id).toHaveLength(8);
+    expect(response.body).toHaveProperty('id');
+    expect(response.body.id).toHaveLength(8);
   });
 })

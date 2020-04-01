@@ -75,7 +75,7 @@
     color: #41414d;
 }
 
-.profile-container ul li p + strong {
+.profile-container ul li p+strong {
     margin-top: 3px;
 }
 
